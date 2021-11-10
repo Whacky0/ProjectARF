@@ -26,7 +26,7 @@ public class Markers : MonoBehaviour
 
     private void Awake()
     {
-		_locationStrings.Add("-34.61761077880108, -58.43419318543805"); //guido
+		_locationStrings.Add("-34.61761077880108, -58.43419318543805"); //Guido
 
 		//_spawnedObjects.Add(Guido);
 
