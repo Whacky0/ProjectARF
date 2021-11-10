@@ -62,7 +62,7 @@ public class Markers : MonoBehaviour
 		}
 		else
 		{
-			_spawnScale = 2f;
+			_spawnScale = 2.5f;
 			for (int i = 0; i < count; i++)
 			{
 				var spawnedObject = _spawnedObjects[i];
