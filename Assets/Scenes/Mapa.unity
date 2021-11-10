@@ -206,6 +206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 233282415}
   - component: {fileID: 233282414}
+  - component: {fileID: 233282416}
   m_Layer: 0
   m_Name: CustomMarkers
   m_TagString: Untagged
@@ -225,17 +226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e526d63fb0170944955248ef3f079b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  locations:
-  - x: 0
-    y: 0
-  - x: 0
-    y: 0
-  - x: 0
-    y: 0
+  _map: {fileID: 1472194301}
+  Guido: {fileID: 7692406780795249435, guid: 252ec770daedd7247a7a91e368e63950, type: 3}
 --- !u!4 &233282415
 Transform:
   m_ObjectHideFlags: 0
@@ -250,6 +242,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &233282416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233282413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a97f55a982d7584fb81f9bc5926bb23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _map: {fileID: 1472194301}
+  Lola: {fileID: 3038037892293996603, guid: ed4530ba737375445af4fc56e11d8f0e, type: 3}
 --- !u!1001 &575865493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -331,15 +337,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4961856903295740, guid: 35ce2bb4caba9434db5e656796b632b1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4961856903295740, guid: 35ce2bb4caba9434db5e656796b632b1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4961856903295740, guid: 35ce2bb4caba9434db5e656796b632b1, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 23386010693667174, guid: 35ce2bb4caba9434db5e656796b632b1, type: 3}
       propertyPath: m_CastShadows
@@ -1494,7 +1500,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472194300}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dcf32ea2cc0514b569329f6b6b68f9b4, type: 3}
   m_Name: 

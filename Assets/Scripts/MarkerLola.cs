@@ -6,44 +6,42 @@ using Mapbox.Utils;
 using Mapbox.Unity.Utilities;
 
 
-public class Markers : MonoBehaviour
+public class MarkerLola : MonoBehaviour
 {
 	[SerializeField]
 	AbstractMap _map;
 
 	List<string> _locationStrings = new List<string>();
-	List <Vector2d> _locations= new List<Vector2d>();
-	
-	 float _spawnScale=1;
+	List<Vector2d> _locations = new List<Vector2d>();
+
+	float _spawnScale = 1;
+
 
 	[SerializeField]
-	GameObject Guido;
-
+	GameObject Lola;
 
 	List<GameObject> _spawnedObjects = new List<GameObject>();
 
-	
 
-    private void Awake()
-    {
-		_locationStrings.Add("-34.61761077880108, -58.43419318543805"); //guido
 
-		//_spawnedObjects.Add(Guido);
+	private void Awake()
+	{
+		_locationStrings.Add("-34.61686412415361, -58.43276156853936");//lola
 
 	}
 
-    void Start()
+	void Start()
 	{
 		for (int i = 0; i < _locationStrings.Count; i++)
 		{
 			var locationString = _locationStrings[i];
 			_locations.Add(Conversions.StringToLatLon(locationString));
-			var instance = Instantiate(Guido);
+			var instance = Instantiate(Lola);
 			instance.transform.localPosition = _map.GeoToWorldPosition(_locations[i], true);
 			instance.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
 			_spawnedObjects.Add(instance);
 		}
-		
+
 	}
 
 	private void Update()
