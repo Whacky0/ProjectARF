@@ -13,7 +13,6 @@ public class ControlCamara : MonoBehaviour
     public bool zoomOut;
 
     Vector3 touchStart;
-    AbstractMap _map;
 
 
     private void Start()
@@ -59,20 +58,17 @@ public class ControlCamara : MonoBehaviour
 
         }
 
-
-
-
     void zoom(float increment)
     {
-        if (increment > 0) {
-            _map = GameObject.FindGameObjectWithTag("Map").GetComponent<AbstractMap>();
+        if (increment > 0) { 
+            AbstractMap _map = GameObject.FindGameObjectWithTag("Map").GetComponent<AbstractMap>();
             Debug.Log(_map.Zoom);           
             _map.SetZoom(_map.Zoom+0.03f);
             _map.UpdateMap();
         }
         else if(increment<0)
         {
-            _map = GameObject.FindGameObjectWithTag("Map").GetComponent<AbstractMap>();
+            AbstractMap _map = GameObject.FindGameObjectWithTag("Map").GetComponent<AbstractMap>();
             Debug.Log(_map.Zoom);
             _map.SetZoom(_map.Zoom - 0.03f);
             _map.UpdateMap();
