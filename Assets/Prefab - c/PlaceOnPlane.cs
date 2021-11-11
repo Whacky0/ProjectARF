@@ -72,14 +72,16 @@ namespace UnityEngine.XR.ARFoundation.Samples
                 if (spawnedObject == null)
                 {
                     spawnedObject = Instantiate(m_PlacedPrefab, hitPose.position, hitPose.rotation);
-                    planeManager.detectionMode = PlaneDetectionMode.None;
-                    cloudManager.enabled = false;
+                    planeManager.detectionMode = PlaneDetectionMode.Horizontal;
+                    cloudManager.enabled = true;
                 }
                 else
                 {
                     spawnedObject.transform.position = hitPose.position;
-                    planeManager.detectionMode = PlaneDetectionMode.Horizontal;
-                    cloudManager.enabled = true;
+
+                    planeManager.detectionMode = PlaneDetectionMode.None;
+                    cloudManager.enabled = false;
+
                 }
             }
         }
