@@ -40,7 +40,7 @@ public class ControlUI : MonoBehaviour
 
     public void memorialprueba()
     {
-        SceneManager.LoadScene("Prueba");
+        SceneManager.LoadScene("MemoGuido");
     }
 
     public void salir()

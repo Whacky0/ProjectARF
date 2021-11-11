@@ -9,13 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 59acb434c28c5ad49bde70fcdf93c000
   - enabled: 1
-    path: Assets/Scenes/Informacion.unity
-    guid: ee3e2f87a6568c34aa341f2c5db0aa3e
-  - enabled: 1
     path: Assets/Scenes/Mapa.unity
     guid: 53ba1261e2c010f45b8e9ebdc844b7e5
   - enabled: 1
-    path: Assets/Scenes/Prueba.unity
+    path: Assets/Scenes/MemoGuido.unity
     guid: f60eef1524ed53b41a07e57aa3816eca
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 0fd88adbbc8411247affc038edccf4ce, type: 2}
