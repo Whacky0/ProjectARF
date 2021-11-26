@@ -478,7 +478,7 @@ GameObject:
   - component: {fileID: 1159061938}
   - component: {fileID: 1159061937}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: fakeGuido
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

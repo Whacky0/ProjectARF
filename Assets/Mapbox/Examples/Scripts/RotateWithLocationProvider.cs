@@ -159,6 +159,7 @@ namespace Mapbox.Examples
 		void Update()
 		{
 			transform.localRotation = Quaternion.Lerp(transform.localRotation, _targetRotation, Time.deltaTime * _rotationFollowFactor);
+
 		}
 	}
 }

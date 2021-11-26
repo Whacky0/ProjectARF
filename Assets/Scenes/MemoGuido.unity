@@ -979,7 +979,7 @@ GameObject:
   - component: {fileID: 1853501014}
   - component: {fileID: 1853501013}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Guido
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

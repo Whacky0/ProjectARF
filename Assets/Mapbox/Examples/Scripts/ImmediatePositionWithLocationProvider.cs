@@ -10,7 +10,7 @@
 		bool _isInitialized;
 
 		ILocationProvider _locationProvider;
-		ILocationProvider LocationProvider
+		public ILocationProvider LocationProvider
 		{
 			get
 			{
@@ -36,6 +36,7 @@
 			{
 				var map = LocationProviderFactory.Instance.mapManager;
 				transform.localPosition = map.GeoToWorldPosition(LocationProvider.CurrentLocation.LatitudeLongitude);
+
 			}
 		}
 	}
