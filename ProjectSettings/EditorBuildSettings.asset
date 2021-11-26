@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Mapa.unity
     guid: 53ba1261e2c010f45b8e9ebdc844b7e5
   - enabled: 1
-    path: Assets/Scenes/MemoGuido.unity
-    guid: f60eef1524ed53b41a07e57aa3816eca
+    path: Assets/Scenes/Memoriales.unity
+    guid: 4eda430f48d8bf74684ec701278e2ebc
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 0fd88adbbc8411247affc038edccf4ce, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 0219851c51f093e4d97d994d3b91792a, type: 2}

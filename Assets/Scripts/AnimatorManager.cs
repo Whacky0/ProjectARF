@@ -38,6 +38,7 @@ public class AnimatorManager : MonoBehaviour
                 anim.enabled = true;
                 anim.Play("showguido");
                 anim.Play("show");
+                anim.Play("New Animation");
             }
 
         }
@@ -48,6 +49,7 @@ public class AnimatorManager : MonoBehaviour
                 anim.enabled = true;
                 anim.Play("hide");
                 anim.Play("hideguido");
+                anim.Play("hideMa");
             }
 
 

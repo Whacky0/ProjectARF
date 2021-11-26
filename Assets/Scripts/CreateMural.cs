@@ -24,6 +24,10 @@ public class CreateMural : MonoBehaviour
         {
             guidoMural();
         }
+        else if (memorial.Martin)
+        {
+            martinMural();
+        }
     }
 
     // Update is called once per frame
@@ -34,11 +38,48 @@ public class CreateMural : MonoBehaviour
 
     void guidoMural()
     {
-        //instancia el mural
+
+        if (memorial.fakeMemorial) 
+        { 
+        
+        
+        }
+        else
+        {
+            var x = Resources.Load("Guido");
+            Instantiate(x);
+        }
+
+
+    }
+
+    void martinMural()
+    {
+
+        if (memorial.fakeMemorial)
+        {
+
+
+        }
+        else
+        {
+            var x = Resources.Load("Martin");
+            Instantiate(x);
+        }
 
     }
     void lolaMural()
     {
-        // instancia el mural
+
+        if (memorial.fakeMemorial)
+        {
+
+
+        }
+        else
+        {
+            var x = Resources.Load("Lola");
+            Instantiate(x);
+        }
     }
 }
