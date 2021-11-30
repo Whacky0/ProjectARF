@@ -287,6 +287,7 @@ GameObject:
   - component: {fileID: 233282415}
   - component: {fileID: 233282414}
   - component: {fileID: 233282416}
+  - component: {fileID: 233282417}
   m_Layer: 0
   m_Name: CustomMarkers
   m_TagString: Untagged
@@ -336,6 +337,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _map: {fileID: 1472194301}
   Lola: {fileID: 3038037892293996603, guid: ed4530ba737375445af4fc56e11d8f0e, type: 3}
+--- !u!114 &233282417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233282413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c940c8d897abcb54a846f233dc456203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _map: {fileID: 1472194301}
+  Martin: {fileID: 6780594520838375014, guid: 38829d99ca574e84c9efa3a39ecb298e, type: 3}
 --- !u!1001 &575865493
 PrefabInstance:
   m_ObjectHideFlags: 0
