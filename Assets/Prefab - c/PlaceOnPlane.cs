@@ -29,6 +29,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
             set { m_PlacedPrefab = value; }
         }
 
+
         /// <summary>
         /// The object instantiated as a result of a successful raycast intersection with a plane.
         /// </summary>

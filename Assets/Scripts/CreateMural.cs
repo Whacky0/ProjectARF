@@ -2,14 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
-
+using UnityEngine.XR.ARFoundation.Samples;
+using System;
 public class CreateMural : MonoBehaviour
 {
     // Start is called before the first frame update
     GameObject MemorialChosed;
     MemorialChosed memorial;
     GameObject clone;
-    GameObject Canvas;
+   public PlaceOnPlane plane;
+
     int o = 0;
 
     private void Awake()
@@ -26,20 +28,24 @@ public class CreateMural : MonoBehaviour
         {
             fakeMessage();
             clone = GameObject.Find("fakeMessage(Clone)");
-            Canvas = GameObject.Find("Canvas(1)");
         }
 
     }
 
     private void Update()
     {
+        try { 
         if (clone.activeInHierarchy == false && memorial.fakeMemorial)
         {
             fakes();
         }
-        else if (memorial.fakeMemorial == false)
+        }
+        catch (NullReferenceException)
         {
-            real();
+            if (memorial.fakeMemorial == false)
+            {
+                real();
+            }
         }
 
     }
@@ -56,7 +62,7 @@ public class CreateMural : MonoBehaviour
         {
             if (memorial.Lola)
             {
-                var x = Resources.Load("Fake Lola");
+                var x = Resources.Load("Fake Lola");           
                 Instantiate(x);
                 o++;
             }
@@ -82,19 +88,19 @@ public class CreateMural : MonoBehaviour
             if (memorial.Lola)
             {
                 var x = Resources.Load("Lola");
-                Instantiate(x);
+                plane.placedPrefab = (GameObject)x;
                 o++;
             }
             else if (memorial.Guido)
             {
                 var x = Resources.Load("Guido");
-                Instantiate(x);
+                plane.placedPrefab = (GameObject)x;
                 o++;
             }
             else if (memorial.Martin)
             {
                 var x = Resources.Load("Martin");
-                Instantiate(x);
+                plane.placedPrefab = (GameObject)x;
                 o++;
             }
         }

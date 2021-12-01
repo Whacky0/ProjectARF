@@ -6,6 +6,7 @@ TagManager:
   tags:
   - memo1
   - Map
+  - Memoriales
   layers:
   - Default
   - TransparentFX
