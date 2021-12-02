@@ -45,7 +45,10 @@ public class ControlUI : MonoBehaviour
 
     public void salir()
     {
+        var x = GameObject.Find("MemorialChosed");
+        Destroy(x);
         SceneManager.LoadScene("Menu");
+
     }
 
   }
