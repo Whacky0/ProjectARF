@@ -47,6 +47,8 @@ public class MemorialChosed : MonoBehaviour
         var loc=location.CurrentLocation;
         var x = loc.LatitudeLongitude.x;
         var y = loc.LatitudeLongitude.y;
+        //fakeMemorial = false;
+        //SceneManager.LoadScene("Memoriales");
 
         if (x <= -34.616589 && x >= -34.618968 && y <= -58.432249 && y >= -58.434540)
         {
@@ -67,6 +69,8 @@ public class MemorialChosed : MonoBehaviour
         var loc = location.CurrentLocation;
         var x = loc.LatitudeLongitude.x;
         var y = loc.LatitudeLongitude.y;
+        //fakeMemorial = false;
+        //SceneManager.LoadScene("Memoriales");
 
         if (x <= -34.616589 && x >= -34.618968 && y <= -58.432249 && y >= -58.434540)
         {
@@ -86,6 +90,8 @@ public class MemorialChosed : MonoBehaviour
         var loc = location.CurrentLocation;
         var x = loc.LatitudeLongitude.x;
         var y = loc.LatitudeLongitude.y;
+        //fakeMemorial = false;
+        //SceneManager.LoadScene("Memoriales");
 
         if (x >= -34.570529 && x <= -34.570303 && y <= -58.417541 && y >= -58.417628)
         {
