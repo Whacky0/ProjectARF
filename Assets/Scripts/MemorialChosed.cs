@@ -51,16 +51,16 @@ public class MemorialChosed : MonoBehaviour
         fakeMemorial = false;
         SceneManager.LoadScene("Memoriales");
 
-        //if (x <= -34.616589 && x >= -34.618968 && y <= -58.432249 && y >= -58.434540)
-        //{
-        //    fakeMemorial = false;
-        //    SceneManager.LoadScene("Memoriales");
-        //}
-        //else
-        //{
-        //    fakeMemorial = true;
-        //    SceneManager.LoadScene("Memoriales");
-        //}
+        if (x <= -34.616589 && x >= -34.618968 && y <= -58.432249 && y >= -58.434540)
+        {
+            fakeMemorial = false;
+            SceneManager.LoadScene("Memoriales");
+        }
+        else
+        {
+            fakeMemorial = true;
+            SceneManager.LoadScene("Memoriales");
+        }
     }
 
     public void LolaMural()
@@ -74,16 +74,16 @@ public class MemorialChosed : MonoBehaviour
         fakeMemorial = false;
         SceneManager.LoadScene("Memoriales");
 
-        //if (x <= -34.616589 && x >= -34.618968 && y <= -58.432249 && y >= -58.434540)
-        //{
-        //    fakeMemorial = false;
-        //    SceneManager.LoadScene("Memoriales");
-        //}
-        //else
-        //{
-        //    fakeMemorial = true;
-        //    SceneManager.LoadScene("Memoriales");
-        //}
+        if (x <= -34.616589 && x >= -34.618968 && y <= -58.432249 && y >= -58.434540)
+        {
+            fakeMemorial = false;
+            SceneManager.LoadScene("Memoriales");
+        }
+        else
+        {
+            fakeMemorial = true;
+            SceneManager.LoadScene("Memoriales");
+        }
     }
 
     public void MartinMural()

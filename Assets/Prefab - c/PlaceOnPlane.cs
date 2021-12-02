@@ -79,9 +79,10 @@ namespace UnityEngine.XR.ARFoundation.Samples
                 else
                 {
                     spawnedObject.transform.position = hitPose.position;
-
                     planeManager.detectionMode = PlaneDetectionMode.None;
                     cloudManager.enabled = false;
+                    planeManager.Destroy();
+                    cloudManager.Destroy();
 
                 }
             }
